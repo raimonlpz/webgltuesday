@@ -1,0 +1,95 @@
+@import url(https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap);
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{   
+    overflow: scroll;   
+}
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+    z-index:1;
+    pointer-events: none;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 300vh;
+    z-index:2;
+    background-color: rgb(13, 14, 14);
+    font-family: 'Antic Didone', serif;
+}
+
+.wrapper h1, h2, h3 {
+    color: white;
+    font-size: 3.2rem;
+    margin: 1rem;
+}
+
+.wrapper--headfix {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+}
+.wrapper--headfix-top {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.wrapper--headfix-bottom {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.wrapper--headfix-left {
+    position: absolute;
+    width: 50vw;
+    height: 100vh;
+    left:0;
+    z-index: -1;
+}
+.wrapper--headfix-right {
+    position: absolute;
+    right:0;
+    width: 50vw;
+    height: 100vh;
+    /* background-image: url('https://images.squarespace-cdn.com/content/v1/5fde0bb9c3067052eda342e2/1609693708048-XU1Q4HCZASLM6GKIILOV/ke17ZwdGBToddI8pDm48kGrDiLy9Ykmmj9qJQ7d3oSd7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1USj38ZVIDTFtzE7gZTV94ne1cZ4ctwo9IbQMeu9-6K2-WqDrn5-9qwX4MTRTpdJXJw/Berlin+Atonal+-+Delfina+Venditti+-+Art+Direction+-+Graphic+Design'); */
+    /* background-position: center;
+    background-size: cover; */
+    z-index: -1;
+}
+
+.wrapper2 {
+    background-color: rgb(250, 255, 244);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    z-index: 200;
+}
+
+.bcn ul li{
+    -webkit-text-stroke: 2px rgb(224, 96, 64);
+    color: transparent;
+    filter: drop-shadow(0 0 .45rem rgb(224, 96, 64));
+    transition: all .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.bcn ul li:hover {
+    -webkit-text-stroke: 2px whitesmoke;
+    filter: drop-shadow(0 0 .45rem whitesmoke);
+    cursor: pointer;
+}
+
+/*# sourceMappingURL=main.css.map*/
